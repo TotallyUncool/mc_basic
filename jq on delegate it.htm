@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#get_it").click(function(){
+  var the_name = $("#i_am").val();
+     $("#the_story").on("click","span",function(){
+    $(this).html("<font color='#FF0000'>" + the_name + "</font>");
+    }); 
+   });
+ });
+</script>
+</head>
+<body>
+<p>What's your name?&nbsp;&nbsp; <input type="text" id="i_am" >&nbsp;&nbsp; <button id="get_it">OK</button><p>
+<p>Which character in this story would you like to be?</p>
+<h2>The Three Little Aardvarks</h2>
+<div style="width:400px" id="the_story"><p ><font face="Georgia">Once upon a time, there were three little aardvarks, <span>Edwina</span>, <span>Eldred</span>, and <span>Albermarle</span>, who lived in an abandoned flying-saucer base on the far side of the moon...</font></p></div>
+</html>
